@@ -93,7 +93,7 @@ module.exports = async function handler(req, res) {
         "anthropic-version": "2023-06-01",
       },
       body: JSON.stringify({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-sonnet-4-5",
         max_tokens: 1500,
         system: SYSTEM_PROMPT,
         messages: [{ role: "user", content: `다음 상담 녹취를 분석하여 상담일지를 작성해주세요:\n\n${transcript}` }],
